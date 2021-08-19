@@ -1,17 +1,10 @@
 import React from "react";
-import { Button } from "../../components";
+import { Header } from "../../components";
 
 const LandingPage = () => {
   return (
     <div>
-      Buat Button
-      <Button
-        onclick={() => {
-          console.log("test");
-        }}
-      >
-        Test
-      </Button>
+      <Header />
     </div>
   );
 };
