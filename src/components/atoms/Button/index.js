@@ -1,6 +1,7 @@
 import React from "react";
 import propTypes from "prop-types";
 import { Link } from "react-router-dom";
+import { styButton } from "./styles";
 
 const Button = (props) => {
   const className = [props.className];
@@ -18,11 +19,11 @@ const Button = (props) => {
     return (
       <span className={className.join(" ")} style={props.style}>
         {props.isLoading ? (
-          <>
+          <div>
             <span className="spinner-border spinner-border-sm mx-5">
               <span className="sr-only">Loading...</span>
             </span>
-          </>
+          </div>
         ) : (
           props.children
         )}
@@ -59,7 +60,7 @@ const Button = (props) => {
   return (
     <button
       to={props.href}
-      className={className.join(" ")}
+      className={styButton}
       style={props.style}
       onClick={onClick}
     >

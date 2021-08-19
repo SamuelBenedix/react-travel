@@ -5,7 +5,13 @@ const LandingPage = () => {
   return (
     <div>
       Buat Button
-      <Button />
+      <Button
+        onclick={() => {
+          console.log("test");
+        }}
+      >
+        Test
+      </Button>
     </div>
   );
 };
